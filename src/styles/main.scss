@@ -1,0 +1,30 @@
+@import "bootstrap";
+@import "fontAweasome";
+@import "fonts";
+@import "variables";
+@import "header";
+
+body {
+  font-family: $fontRegular;
+  font-size: 16px;
+  color: #000;
+  background-image: url(../images/bg.jpg);
+}
+
+.fontRegular {
+  font-family: $fontRegular;
+}
+.fontLight {
+  font-family: $fontLight;
+}
+.fontBold {
+  font-family: $fontBold;
+}
+.fontExtraBold {
+  font-family: $fontExtraBold;
+}
+.fontSemiBold {
+  font-family: $fontSemiBold;
+}
+
+@import "mediaqueries";

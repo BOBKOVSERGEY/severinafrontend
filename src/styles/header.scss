@@ -1,0 +1,83 @@
+.header {
+  & .container {
+    background-color: $colorBlue;
+    padding: 40px 0;
+  }
+  &__logo {
+    font-family: $fontBold;
+    color: $colorWhite;
+    font-size: 25px;
+    text-transform: uppercase;
+  }
+  &__logo-sub {
+    color: $colorWhite;
+    font-size: 16px;
+    & span {
+      color: $colorRed;
+    }
+  }
+  & .navbar-brand {
+    margin-right: 2rem;
+  }
+  & .navbar {
+    padding: 0.5rem 2rem;
+  }
+  & .navbar-light .navbar-nav .nav-link {
+    color: $colorWhite;
+    font-size: 15px;
+    padding: 4px 20px;
+    transition: all .3s;
+    &:hover {
+      color: $colorDarkBlue;
+      font-size: 15px;
+      background: $colorWhite;
+    }
+  }
+  & .nav-item.active {
+    & .nav-link {
+      color: $colorDarkBlue;
+      font-size: 15px;
+      background: $colorWhite;
+    }
+  }
+  &__basket {
+    display: flex;
+    align-items: center;
+    //justify-content: center;
+  }
+  &__basket-icon {
+    position: relative;
+    margin-right: 10px;
+    & i {
+      font-size: 30px;
+      color: $colorWhite;
+    }
+  }
+  &__basket-count {
+    font-size: 10px;
+    position: absolute;
+    top: -7px;
+    right: -7px;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    border-radius: 50%;
+    text-align: center;
+    color: $colorDarkBlue;
+    background-color: $colorWhite;
+  }
+  &__basket-price {
+    color:$colorWhite;
+    & span {
+      font-family: $fontBold;
+    }
+  }
+}
+
+@media only screen and (max-width : 992px) {
+  .header {
+    &__basket {
+      margin-top: 20px;
+    }
+  }
+}
