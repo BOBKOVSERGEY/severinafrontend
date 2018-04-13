@@ -1,7 +1,7 @@
 .header {
   & .container {
     background-color: $colorBlue;
-    padding: 40px 0;
+    padding: 30px 0;
   }
   &__logo {
     font-family: $fontBold;
@@ -38,6 +38,12 @@
       color: $colorDarkBlue;
       font-size: 15px;
       background: $colorWhite;
+    }
+  }
+  &__basket-wrap {
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
     }
   }
   &__basket {
@@ -77,6 +83,9 @@
 @media only screen and (max-width : 992px) {
   .header {
     &__basket {
+      margin-top: 20px;
+    }
+    & .navbar-nav {
       margin-top: 20px;
     }
   }

@@ -49,20 +49,51 @@
               <a class="nav-link" href="#">Доставка</a>
             </li>
           </ul>
-          <div class="header__basket">
-            <div class="header__basket-icon">
-              <i class="material-icons">shopping_cart</i>
-              <span class="header__basket-count">2</span>
+          <a href="#" class="header__basket-wrap">
+            <div class="header__basket">
+              <div class="header__basket-icon">
+                <i class="material-icons">shopping_cart</i>
+                <span class="header__basket-count">2</span>
+              </div>
+              <div class="header__basket-price">
+                На сумму <span>1 200</span> <i class="fa fa-rub" aria-hidden="true"></i>
+              </div>
             </div>
-            <div class="header__basket-price">
-              На сумму <span>1 200</span> <i class="fa fa-rub" aria-hidden="true"></i>
-            </div>
+          </a>
 
-          </div>
         </div>
       </nav>
     </div>
   </header>
+  <section class="slider">
+    <div class="container">
+      <div class="swiper-container slider__container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slider__item" style="background-image: url('dist/images/slider-3.jpg');">
+            <!--<div class="slider__caption">
+                <div class="row">
+                  <div class="text-center">
+                    <h2 class="slider__heading">Severina</h2>
+                    <div class="slider__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+                  </div>
+                </div>
+            </div>-->
+          </div>
+          <div class="swiper-slide slider__item" style="background-image: url('dist/images/slider-2.jpg');">
+
+          </div>
+          <div class="swiper-slide slider__item" style="background-image: url('dist/images/slider-1.jpg');">
+
+          </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows
+        <div class="swiper-button-white swiper-button-next"></div>
+        <div class="swiper-button-white swiper-button-prev"></div>-->
+      </div>
+    </div>
+  </section>
   <script src="dist/js/lib.js"></script>
   <script src="dist/js/main.js"></script>
 </body>
