@@ -23,7 +23,7 @@
     position: relative;
     display: block;
 
-    &:after {
+    /*&:after {
       content: '';
       display: block;
       width: 100%;
@@ -34,8 +34,9 @@
       background: #333;
       opacity: .1;
       transition: all .3s;
-    }
+    }*/
   }
+
   &__actions-item {
     background: no-repeat top center;
     //background-repeat: no-repeat;
@@ -43,7 +44,7 @@
     background-size: cover;
     height: 300px;
     position: relative;
-    &:after {
+    /*&:after {
       content: '';
       display: block;
       width: 100%;
@@ -54,6 +55,16 @@
       background: #333;
       opacity: .1;
       transition: all .3s;
+    }*/
+  }
+  &__actions-item-bg, &__news-item-bg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgba(#333, .2);
+    transition: all .3s;
+    &:hover {
+      background: rgba(#333, .3);
     }
   }
   &__blocks {
@@ -64,26 +75,27 @@
       padding-right: 0;
     }
   }
-  &__news-item-heading-wrap{
+  &__news-item-heading-wrap, &__actions-item-heading-wrap{
     position: absolute;
     left: 15px;
     bottom: 20px;
     z-index: 4;
+    margin-right: 15px;
   }
-  &__news-item-heading {
+  &__news-item-heading, &__actions-item-heading {
     color: $colorRed;
     text-transform: uppercase;
     font-size: 32px;
     padding: 0 15px;
-    background: rgba($colorBlue, .5);
+    background: rgba($colorDarkBlue, .5);
     display: inline-block;
   }
-  &__news-item-heading-sub {
+  &__news-item-heading-sub, &__actions-item-heading-sub {
     font-family: $fontBold;
     color: $colorWhite;
     text-transform: uppercase;
     font-size: 28px;
     padding: 0 15px;
-    background: rgba($colorBlue, .5);
+    background: rgba($colorDarkBlue, .5);
   }
 }
