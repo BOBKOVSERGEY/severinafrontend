@@ -1,0 +1,167 @@
+.product {
+  margin: 50px 0 10px 0;
+  &__item {
+    position: relative;
+    margin: 15px;
+    padding: 15px;
+    border: 1px solid #eceaf3;
+    &:hover {
+      border: none;
+    }
+    &:hover .product__item-container {
+      padding: 15px;
+      position: absolute;
+      z-index: 99;
+      top: 0;
+      left: 0;
+      right: 0;
+      border: 1px solid $colorBlue;
+      box-shadow: 0 2px 5px 0 rgba($colorBlue, .18);
+    }
+    &:hover .product__item-title {
+      overflow: auto;
+      white-space: normal;
+    }
+    &:hover .product__item-hidden {
+      display: block;
+      opacity: 1;
+    }
+  }
+  &__item-container {
+    //transition: all .3s;
+    //position: relative;
+  }
+  &__item-rating {
+    text-align: center;
+    margin: 5px 0 0 0;
+    & i {
+      color: #cfcdd7;
+      transition: all .3s;
+    }
+    & i:hover {
+      cursor: pointer;
+      color: #FC7329;
+
+    }
+  }
+  &__item-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-top: 10px;
+    text-align: center;
+    color: #2378fc;
+    & a {
+      color: #2378fc;
+      text-decoration: none;
+      font-size: 16px;
+    }
+  }
+  &__item-price {
+    font-family: $fontBold;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 22px;
+    & i {
+      font-size: 17px;
+    }
+  }
+  &__item-availability-wrap {
+    text-align: center;
+  }
+  &__item-availability {
+    text-align: center;
+    margin-top: 5px;
+    display: inline-block;
+    background-color: #6abe22;
+    color: $colorWhite;
+    padding: 1px 10px 5px 10px;
+    text-transform: uppercase;
+    font-size: 12px;
+    cursor: pointer;
+    & span {
+      border-bottom: 1px dotted $colorWhite;
+    }
+    &:hover {
+      background-color: darken(#6abe22, 10%);
+    }
+  }
+  &__item-hidden{
+    text-align: center;
+    padding: 15px;
+    background-color: #eee;
+    margin: 20px -15px -15px -15px;
+    display: none;
+    opacity: 0;
+  }
+  &__item-btn-basket {
+    background-color: $colorBlue;
+    color: $colorWhite;
+    &:hover {
+      background-color: lighten($colorBlue, 10%);
+    }
+  }
+  &__item-btn-compare {
+    &:hover {
+      background-color: lighten(#DCDCDC, 10%);
+    }
+  }
+  &__item-buy-click-wrap {
+    margin-top: 5px;
+  }
+  &__item-buy-click {
+    font-size: 12px;
+    background: none;
+  }
+  &__item-label {
+    position: absolute;
+    top:3px;
+    left: 0;
+    z-index: 100;
+  }
+  &__item-label-sale {
+    display: flex;
+    font-size: 11px;
+    background: #ff5656;
+    padding: 3px 6px;
+    align-items: center;
+    text-transform: uppercase;
+    color: $colorWhite;
+    margin-bottom: 3px;
+  }
+  &__item-label-sale-img {
+    margin-right: 3px;
+    & img {
+      width: 17px;
+    }
+  }
+  &__item-label-new {
+    display: flex;
+    font-size: 11px;
+    background: $colorBlue;
+    padding: 3px 6px;
+    align-items: center;
+    text-transform: uppercase;
+    color: $colorWhite;
+    margin-bottom: 3px;
+    position: relative;
+    max-width: 60px;
+    &:after {
+      content: '';
+      //background: red;
+      position: absolute;
+      right: -24px;
+      border-color: $colorBlue rgba($colorBlue,0.0) $colorBlue $colorBlue;
+      border-style: solid;
+      border-width: 12px 12px 12px 12px;
+      height: 0;
+      width: 0;
+    }
+  }
+  &__item-label-new-img {
+    margin-right: 3px;
+    & img {
+      width: 17px;
+    }
+  }
+}

@@ -5,6 +5,10 @@
 @import "swiper";
 @import "header";
 @import "slider";
+@import "menu";
+@import "center-block";
+@import "product";
+@import "action-news";
 
 body {
   font-family: $fontRegular;
@@ -12,7 +16,14 @@ body {
   color: #000;
   background-image: url(../images/bg.jpg);
 }
-
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}
+img {
+  max-width: 100%;
+}
 .fontRegular {
   font-family: $fontRegular;
 }

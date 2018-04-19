@@ -1,9 +1,6 @@
 .slider {
   margin: 15px 0;
-  & .container {
-    padding-left: 0;
-    padding-right: 0;
-  }
+
   &__container {
     height: 400px;
     position: relative;

@@ -11,58 +11,73 @@
 <body>
   <header class="header">
     <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#">
-          <div class="header__logo">Косметика</div>
-          <div class="header__logo-sub">Severina <span>&</span> De’Lakrua</div>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+      <div class="header__bg">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="#">
+            <div class="header__logo">Косметика</div>
+            <div class="header__logo-sub">Severina <span>&</span> De’Lakrua</div>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">О магазине <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Новости</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Обзоры</a>
-            </li>
-            <!--<li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Обзоры
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">О магазине <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Новости</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Обзоры</a>
+              </li>
+              <!--<li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Обзоры
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>-->
+              <li class="nav-item">
+                <a class="nav-link" href="#">Оплата и доставка</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Доставка</a>
+              </li>
+            </ul>
+            <div>
+              <a href="#" class="header__basket-wrap">
+                <div class="header__basket">
+                  <div class="header__basket-icon">
+                    <i class="material-icons">shopping_cart</i>
+                    <span class="header__basket-count">2</span>
+                  </div>
+                  <div class="header__basket-price">
+                    На сумму <span>1 200</span> <i class="fa fa-rub" aria-hidden="true"></i>
+                  </div>
+                </div>
               </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>-->
-            <li class="nav-item">
-              <a class="nav-link" href="#">Оплата и доставка</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Доставка</a>
-            </li>
-          </ul>
-          <a href="#" class="header__basket-wrap">
-            <div class="header__basket">
-              <div class="header__basket-icon">
-                <i class="material-icons">shopping_cart</i>
-                <span class="header__basket-count">2</span>
-              </div>
-              <div class="header__basket-price">
-                На сумму <span>1 200</span> <i class="fa fa-rub" aria-hidden="true"></i>
+              <div class="header__phone">
+                <div class="header__phone-icon">
+                  <i class="material-icons">phone_in_talk</i>
+                </div>
+                <div>
+                  <a href="tel:88001234567">8-800-123-45-67</a>
+                  <p class="header__phone-sub">Звонок по России бесплатный</p>
+                </div>
               </div>
             </div>
-          </a>
 
-        </div>
-      </nav>
+
+
+          </div>
+        </nav>
+      </div>
     </div>
   </header>
   <section class="slider">
@@ -91,6 +106,358 @@
         <!-- Add Arrows
         <div class="swiper-button-white swiper-button-next"></div>
         <div class="swiper-button-white swiper-button-prev"></div>-->
+      </div>
+    </div>
+  </section>
+  <section class="center-block">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="menu__wrapper">
+            <ul class="menu">
+              <li><a href="#">Аксессуары</a></li>
+              <li><a href="#">Пилки и бафы</a></li>
+              <li><a href="#">Наборы пилок</a></li>
+              <li><a href="#">Разделители для пальцев ног</a></li>
+              <li><a href="#">Бальзам для губ</a></li>
+              <li><a href="#">Блеск для губ</a></li>
+              <li><a href="#">Втирка для ногтей</a></li>
+              <li><a href="#">Гели для наращивания ногтей</a></li>
+              <li><a href="#">Жидкости для снятия лака</a></li>
+              <li><a href="#">Кератолики (Кератолитики)</a></li>
+              <li><a href="#">Клей для ногтей</a></li>
+              <li><a href="#">КРЕМ для рук и ног</a></li>
+              <li><a href="#">Лаки для ногтей</a></li>
+              <li><a href="#">НАКЛЕЙКИ для ногтей</a></li>
+              <li><a href="#">Нейл-арт</a></li>
+              <li><a href="#">Сушка для лака</a></li>
+              <li><a href="#">Тушь для ресниц</a></li>
+            </ul>
+          </div>
+
+        </div>
+        <div class="col-md-9">
+          <div class="center-block__tab">
+            <ul class="nav nav-tabs" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" href="#profile" role="tab" data-toggle="tab">
+                  <span class="center-block__tab-item-icon"><img src="dist/images/sale.png" alt=""></span>
+                  Скидки
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#buzz" role="tab" data-toggle="tab">
+                  <span class="center-block__tab-item-icon"><img src="dist/images/new.png" alt=""></span>
+                  Новинки
+                </a>
+              </li>
+            </ul>
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <div role="tabpanel" class="tab-pane in active" id="profile">
+                <div class="product">
+                  <div class="tab-swiper-container">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="product__item">
+                        <div class="product__item-container">
+                          <a href="#">
+                            <div class="product__item-photo">
+                              <img src="dist/images/product-1.jpg" alt="">
+                            </div>
+                          </a>
+                          <div class="product__item-rating">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                          </div>
+                          <div class="product__item-title">
+                            <a href="#">Бальзам для губ в блистере - Вишня - 4,6г</a>
+                          </div>
+                          <div class="product__item-price">
+                            2 000 <i class="fa fa-rub" aria-hidden="true"></i>
+                          </div>
+                          <div class="product__item-availability-wrap">
+                            <div class="product__item-availability">
+                              <span>в наличии</span>
+                            </div>
+                          </div>
+                          <div class="product__item-hidden">
+                            <div class="product__item-wrap-btn">
+                              <button class="btn product__item-btn-compare"><i class="fa fa-balance-scale" aria-hidden="true"></i></button>
+                              <button class="btn product__item-btn-basket">В корзину</button>
+                            </div>
+                            <div class="product__item-buy-click-wrap">
+                              <button class="btn product__item-buy-click">Купить в один клик</button>
+                            </div>
+                          </div>
+                          <div class="product__item-label">
+                            <div class="product__item-label-sale">
+                              <div class="product__item-label-sale-img"><img src="dist/images/sale.png" alt=""></div>
+                              <div>Скидка</div>
+                            </div>
+                            <div class="product__item-label-new">
+                              <div class="product__item-label-new-img"><img src="dist/images/new-white.png" alt=""></div>
+                              <div>New</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="product__item">
+                        <div class="product__item-container">
+                          <a href="#">
+                            <div class="product__item-photo">
+                              <img src="dist/images/product-3.jpg" alt="">
+                            </div>
+                          </a>
+                          <div class="product__item-rating">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                          </div>
+                          <div class="product__item-title">
+                            <a href="#">Бальзам для губ в блистере - Вишня - 4,6г</a>
+                          </div>
+                          <div class="product__item-price">
+                            2 000 <i class="fa fa-rub" aria-hidden="true"></i>
+                          </div>
+                          <div class="product__item-availability-wrap">
+                            <div class="product__item-availability">
+                              <span>в наличии</span>
+                            </div>
+                          </div>
+                          <div class="product__item-hidden">
+                            <div class="product__item-wrap-btn">
+                              <button class="btn product__item-btn-compare"><i class="fa fa-balance-scale" aria-hidden="true"></i></button>
+                              <button class="btn product__item-btn-basket">В корзину</button>
+                            </div>
+                            <div class="product__item-buy-click-wrap">
+                              <button class="btn product__item-buy-click">Купить в один клик</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="product__item">
+                        <div class="product__item-container">
+                          <a href="#">
+                            <div class="product__item-photo">
+                              <img src="dist/images/product-2.jpg" alt="">
+                            </div>
+                          </a>
+                          <div class="product__item-rating">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                          </div>
+                          <div class="product__item-title">
+                            <a href="#">Бальзам для губ в блистере - Вишня - 4,6г</a>
+                          </div>
+                          <div class="product__item-price">
+                            2 000 <i class="fa fa-rub" aria-hidden="true"></i>
+                          </div>
+                          <div class="product__item-availability-wrap">
+                            <div class="product__item-availability">
+                              <span>в наличии</span>
+                            </div>
+                          </div>
+                          <div class="product__item-hidden">
+                            <div class="product__item-wrap-btn">
+                              <button class="btn product__item-btn-compare"><i class="fa fa-balance-scale" aria-hidden="true"></i></button>
+                              <button class="btn product__item-btn-basket">В корзину</button>
+                            </div>
+                            <div class="product__item-buy-click-wrap">
+                              <button class="btn product__item-buy-click">Купить в один клик</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="product__item">
+                        <div class="product__item-container">
+                          <a href="#">
+                            <div class="product__item-photo">
+                              <img src="dist/images/product-1.jpg" alt="">
+                            </div>
+                          </a>
+                          <div class="product__item-rating">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                          </div>
+                          <div class="product__item-title">
+                            <a href="#">Бальзам для губ в блистере - Вишня - 4,6г</a>
+                          </div>
+                          <div class="product__item-price">
+                            2 000 <i class="fa fa-rub" aria-hidden="true"></i>
+                          </div>
+                          <div class="product__item-availability-wrap">
+                            <div class="product__item-availability">
+                              <span>в наличии</span>
+                            </div>
+                          </div>
+                          <div class="product__item-hidden">
+                            <div class="product__item-wrap-btn">
+                              <button class="btn product__item-btn-compare"><i class="fa fa-balance-scale" aria-hidden="true"></i></button>
+                              <button class="btn product__item-btn-basket">В корзину</button>
+                            </div>
+                            <div class="product__item-buy-click-wrap">
+                              <button class="btn product__item-buy-click">Купить в один клик</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="product__item">
+                        <div class="product__item-container">
+                          <a href="#">
+                            <div class="product__item-photo">
+                              <img src="dist/images/product-3.jpg" alt="">
+                            </div>
+                          </a>
+                          <div class="product__item-rating">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                          </div>
+                          <div class="product__item-title">
+                            <a href="#">Бальзам для губ в блистере - Вишня - 4,6г</a>
+                          </div>
+                          <div class="product__item-price">
+                            2 000 <i class="fa fa-rub" aria-hidden="true"></i>
+                          </div>
+                          <div class="product__item-availability-wrap">
+                            <div class="product__item-availability">
+                              <span>в наличии</span>
+                            </div>
+                          </div>
+                          <div class="product__item-hidden">
+                            <div class="product__item-wrap-btn">
+                              <button class="btn product__item-btn-compare"><i class="fa fa-balance-scale" aria-hidden="true"></i></button>
+                              <button class="btn product__item-btn-basket">В корзину</button>
+                            </div>
+                            <div class="product__item-buy-click-wrap">
+                              <button class="btn product__item-buy-click">Купить в один клик</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="product__item">
+                        <div class="product__item-container">
+                          <a href="#">
+                            <div class="product__item-photo">
+                              <img src="dist/images/product-2.jpg" alt="">
+                            </div>
+                          </a>
+                          <div class="product__item-rating">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                          </div>
+                          <div class="product__item-title">
+                            <a href="#">Бальзам для губ в блистере - Вишня - 4,6г</a>
+                          </div>
+                          <div class="product__item-price">
+                            2 000 <i class="fa fa-rub" aria-hidden="true"></i>
+                          </div>
+                          <div class="product__item-availability-wrap">
+                            <div class="product__item-availability">
+                              <span>в наличии</span>
+                            </div>
+                          </div>
+                          <div class="product__item-hidden">
+                            <div class="product__item-wrap-btn">
+                              <button class="btn product__item-btn-compare"><i class="fa fa-balance-scale" aria-hidden="true"></i></button>
+                              <button class="btn product__item-btn-basket">В корзину</button>
+                            </div>
+                            <div class="product__item-buy-click-wrap">
+                              <button class="btn product__item-buy-click">Купить в один клик</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                    <br>
+                    <br>
+                  <!-- Add Pagination -->
+                  <div class="swiper-pagination swiper-pagination-tab"></div>
+                  <!-- Add Arrows
+                  <div class="swiper-button-next-tab"></div>
+                  <div class="swiper-button-prev-tab"></div>-->
+                </div>
+                </div>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="buzz">новинки</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="action-news">
+    <div class="container">
+      <div class="action-news__bg">
+        <h2 class="action-news__heading">Акции <span>&</span> новости</h2>
+        <div class="action-news__blocks">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="action-news__news">
+                <a href="#">
+                  <div class="action-news__news-item" style="background-image: url(dist/images/news-1.jpg)">
+                    <div class="action-news__news-item-heading-wrap">
+                      <div class="action-news__news-item-heading">Стразы</div>
+                      <div class="action-news__news-item-heading-sub">Новые материалы</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="action-news__news">
+                <a href="#">
+                  <div class="action-news__news-item" style="background-image: url(dist/images/action-2.jpg)">
+
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="action-news__actions">
+                <a href="#">
+                  <div class="action-news__actions-item" style="background-image: url(dist/images/action-1.jpg)">
+
+                  </div>
+                </a>
+              </div>
+              <div class="action-news__actions">
+                <a href="#">
+                  <div class="action-news__actions-item" style="background-image: url(dist/images/news-2.jpg)">
+
+                  </div>
+                </a>
+
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>

@@ -1,0 +1,35 @@
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background: $colorWhite;
+  & li {
+    border-bottom: 2px solid #dedce4;
+    transition: all .3s;
+    &:last-child {
+      border-bottom: 0;
+    }
+    & a {
+      padding: 8px 15px;
+      color: $colorBlue;
+      display: block;
+      font-size: 15px;
+      &:hover {
+        color: $colorWhite;
+        text-decoration: none;
+      }
+    }
+    &:hover {
+      background: $colorBlue;
+      cursor: pointer;
+      & a {
+        color: $colorWhite;
+      }
+    }
+  }
+  &__wrapper {
+    //padding: 0;
+    border: 2px solid #dedce4;
+    margin-bottom: 15px;
+  }
+}
