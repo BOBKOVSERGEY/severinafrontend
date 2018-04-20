@@ -1,0 +1,19 @@
+.btn {
+  border-radius: 0;
+  &--average {
+    width: 100%;
+    max-width: 270px;
+  }
+  &--small {
+    padding: 2px 15px;
+    margin-bottom: 20px;
+  }
+  &--blue {
+    background: $colorBlue;
+    color: $colorWhite;
+    &:hover {
+      background: lighten($colorBlue, 5%);
+
+    }
+  }
+}

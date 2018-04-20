@@ -1,4 +1,4 @@
-.about-shop {
+.partners {
   margin-top: 30px;
   &__bg {
     background-color: $colorWhite;
@@ -9,8 +9,8 @@
     text-align: center;
     color: $colorBlue;
     text-transform: uppercase;
-  }
-  &__content {
-    font-size: 14px;
+    & span  {
+      color: $colorRed;
+    }
   }
 }
