@@ -1,9 +1,11 @@
 .partners {
   margin-top: 30px;
-  &__bg {
+  & .container {
     background-color: $colorWhite;
     border: 2px solid $colorGray;
-    padding: 20px 15px;
+  }
+  &__bg {
+    padding: 20px 0;
   }
   &__heading {
     text-align: center;
@@ -13,4 +15,17 @@
       color: $colorRed;
     }
   }
+  &__item {
+    margin: 20px 0 50px 0;
+  }
+  &__item-wrapper {
+    padding: 0 50px;
+  }
+}
+.swiper-container__partners {
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  z-index: 1;
 }

@@ -1,4 +1,4 @@
-var swiper = new Swiper('.swiper-container', {
+var swiper = new Swiper('.swiper-container__slider', {
   loop: true,
   //effect: 'fade',
   speed: 600,
@@ -45,4 +45,47 @@ var swiper = new Swiper('.tab-swiper-container', {
       //spaceBetween: 30
     }
   }
+});
+(function () {
+  var swiper = new Swiper('.swiper-container__partners', {
+    slidesPerView: 5,
+    spaceBetween: 30,
+    spaceArround: 30,
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination__partners',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next-partners',
+      prevEl: '.swiper-button-prev-partners',
+    },
+  });
+})();
+$(function () {
+
+  var heightMenu = $('.menu__wrapper').outerHeight();
+
+  //window.innerWidth и window.innerHeight отвечают за размер окна браузера.
+  var widthWindow = window.innerWidth;
+  if (widthWindow >= 768) {
+    $('.news__big').outerHeight(heightMenu);
+  } else {
+    //$('.news__big').outerHeight('auto');
+  }
+
+
+  window.onresize = function () {
+    heightMenu = $('.menu__wrapper').outerHeight();
+
+    if (widthWindow >= 768) {
+      $('.news__big').outerHeight(heightMenu);
+    } else if (widthWindow <= 768) {
+
+    }
+
+
+  };
+
+
 });

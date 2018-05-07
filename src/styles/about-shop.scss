@@ -1,9 +1,11 @@
 .about-shop {
   margin-top: 30px;
-  &__bg {
+  & .container {
     background-color: $colorWhite;
     border: 2px solid $colorGray;
-    padding: 20px 15px;
+  }
+  &__bg {
+    padding: 20px 0;
   }
   &__heading {
     text-align: center;

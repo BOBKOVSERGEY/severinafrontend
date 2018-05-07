@@ -10,8 +10,8 @@
 </head>
 <body>
   <header class="header">
-    <div class="container">
-      <div class="header__bg">
+    <div class="container header__bg">
+      <div>
         <nav class="navbar navbar-expand-lg navbar-light">
           <a class="navbar-brand" href="#">
             <div class="header__logo">Косметика</div>
@@ -82,7 +82,7 @@
   </header>
   <section class="slider">
     <div class="container">
-      <div class="swiper-container slider__container">
+      <div class="swiper-container swiper-container__slider slider__container">
         <div class="swiper-wrapper">
           <div class="swiper-slide slider__item" style="background-image: url('dist/images/slider-3.jpg');">
             <!--<div class="slider__caption">
@@ -496,11 +496,54 @@
     <div class="container">
       <div class="partners__bg">
         <h2 class="partners__heading">Партнеры <span>&</span> платежные системы</h2>
+        <div class="partners__item-wrapper">
+          <div class="swiper-container__partners">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="partners__item">
+                  <img src="dist/images/logo-sber.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="partners__item">
+                  <img src="dist/images/logo-sber.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="partners__item">
+                  <img src="dist/images/logo-sber.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="partners__item">
+                  <img src="dist/images/logo-sber.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="partners__item">
+                  <img src="dist/images/logo-sber.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="partners__item">
+                  <img src="dist/images/logo-sber.png" alt="">
+                </div>
+              </div>
+
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination swiper-pagination__partners"></div>
+
+            <!--<div class="swiper-button-next-partners"></div>
+            <div class="swiper-button-prev-partners"></div>-->
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
   <section class="footer">
-    <div class="container">
+    <div class="container footer__bg-wrap">
       <div class="footer__bg">
         <div class="row">
           <div class="col-md-3">
@@ -593,8 +636,8 @@
           </div>
         </div>
       </div>
-      <div class="footer__bottom-bg">
-      </div>
+    </div>
+    <div class="container footer__bottom-bg">
     </div>
   </section>
   <script src="dist/js/lib.js"></script>
